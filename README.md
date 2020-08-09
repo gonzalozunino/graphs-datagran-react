@@ -1,7 +1,7 @@
 ## Information
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-This is a quick simple react project using [Ant Design](https://ant.design/) for layout to create a simple graph and hable tables.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br />
+This is a quick simple react project using [Ant Design](https://ant.design/) for layout, to create a line graph from CSV and handle data on tables.<br />
 
 Used libraries:
 [Highcharts](https://www.highcharts.com/).<br />

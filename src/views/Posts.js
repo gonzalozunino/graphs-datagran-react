@@ -107,11 +107,13 @@ const Posts = () => {
 
   useEffect(() => {
     const fetchPostsByUser = async () => {
-      const posts = await api.get("/posts", {
-        userId: selectedUserId,
-      });
+      if (selectedUserId) {
+        const posts = await api.get("/posts", {
+          userId: selectedUserId,
+        });
 
-      setPostsByUser(posts.data);
+        setPostsByUser(posts.data);
+      }
     };
 
     fetchPostsByUser();
@@ -119,9 +121,11 @@ const Posts = () => {
 
   useEffect(() => {
     const fetchPostsComments = async () => {
-      const posts = await api.get(`/posts/${selectedPostId}/comments`);
+      if (selectedPostId) {
+        const posts = await api.get(`/posts/${selectedPostId}/comments`);
 
-      setPostComments(posts.data);
+        setPostComments(posts.data);
+      }
     };
 
     fetchPostsComments();
