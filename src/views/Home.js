@@ -43,7 +43,6 @@ const Home = () => {
       delimiter: ",",
       header: true,
     });
-    console.log(results);
     const xCategories = results.data.map((result) => result[xAxis]);
     const ySeries = results.data.map((result) => Number(result[yAxis]));
 
